@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>finishing</title>
+  
+       <link rel="stylesheet" type="text/css" href="forcss.css">
+  
+  
+</head>
+<body>
+  
+  <h1 id="typing"></h1>
+
+<script>
+const text = "welcome in my website";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 100); // kecepatan ketik
+  }
+}
+
+typeEffect();
+</script>
+  
+  <p class="fade-text">Hallo aku ibal orang faling tamvan sedunia, suaminya elaina</p>
+
+<style>
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+<script>
+window.addEventListener("load", () => {
+  document.querySelector(".fade-text").classList.add("show");
+});
+</script>
+  
+  <h2 id="rotating-text"></h2>
+
+        <script>
+               const words = ["I", "Like", "Elaina"];
+               let i = 0;
+
+               function rotateText() {
+               document.getElementById("rotating-text").textContent = words[i];
+               i = (i + 1) % words.length;
+               }
+               setInterval(rotateText, 2000);
+               rotateText(); // panggil pertama kali
+               </script>
+  
+    <div> 
+       <nav>
+           <ul>
+              <li><a href="#loly">loly</a></li>
+              <li><a href="#gambar">gambar</a></li>
+              <li><a href="#waifu">waifu</a></li>
+           </ul>
+       </nav>
+    </div>
+    
+              <h2>Tebak siapa waipu atmin? yaps benar sekali</h2>
+              <p><strong>elaina,</strong> my wife is elaina, aku suka sama elaina><
+                
+        <h2>Foto istri gwa</h2>
+        <img src="https://s1.zerochan.net/Elaina.600.3575333.jpg" usemap="#mapGambar" alt="Contoh Gambar">
+                
+   <h2>Masukan lalu kirim</h2>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="Waifu">Waifu:</label>
+            <input type="waifu" id="waifu" name="waifu"><br><br>
+
+            <input type="submit" value="Kirim">
+            <input type="reset">
+            <input type="checkbox">
+            
+         <h2>Upload foto waifu kalian</h2>
+            <p>yang normal kalo upload</p>
+            <input type="file">
+                
+            <p>&copy;by kyeeto 2025</p>
+
+</body>
+</html>
